@@ -1,0 +1,8 @@
+ul {
+    list-style: none;
+}
+.subscribe-input {
+    outline: none;
+    height: 40px;
+    color:rgba(0, 0, 0, 0.13)
+}

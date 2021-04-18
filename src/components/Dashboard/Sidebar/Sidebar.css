@@ -1,0 +1,8 @@
+.admin-panel{
+    color:white;
+    padding:5px;
+
+}
+.admin-panel:hover{
+    background:rgba(128, 128, 128, 0.5);
+}

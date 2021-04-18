@@ -1,0 +1,9 @@
+.main-header {
+    height: 500px;
+    background-image: url('../../../image/muscular-car-service-worker-repairing-vehicle.jpg'),
+    linear-gradient(rgba(41, 37, 37, 0.774), rgba(43, 43, 38, 0.603));;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+
+}
