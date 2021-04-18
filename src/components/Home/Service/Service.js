@@ -4,7 +4,7 @@ import { useHistory } from 'react-router';
 import './Service.css'
 
 const Service = ({service}) => {
-    const {title,description,img,_id} = service;
+    const {title,description,price,img,_id} = service;
     const history = useHistory()
  
    
@@ -18,7 +18,7 @@ const Service = ({service}) => {
             
             
             <div className='bg-dark  order-button'>
-            <Button style={{fontSize:"16px"}} variant='danger' onClick={()=> history.push(`/orderNow/${_id}`)}>GET THIS SERVICE</Button><span  style={{color:"white",fontSize:"20px",marginLeft:"100px",fontWeight:"bold"}} className=' text-white d-inline-block'>$ 400</span>
+            <Button style={{fontSize:"16px"}} variant='danger' onClick={()=> history.push(`/orderNow/${_id}`)}>GET THIS SERVICE</Button><span  style={{color:"white",fontSize:"20px",marginLeft:"100px",fontWeight:"bold"}} className=' text-white d-inline-block'>$ {price}</span>
             </div>
             
            
