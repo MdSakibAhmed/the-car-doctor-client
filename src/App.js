@@ -64,7 +64,15 @@ function App() {
             <ManageServices></ManageServices>
           </Route>
           <PrivateRoute path="/orderNow/:serviceId">
-            <OrderProcess></OrderProcess>
+          <div>
+              <div className="bg-dark">
+                <HeaderNavbar></HeaderNavbar>
+              </div>
+              <div >
+              <OrderProcess></OrderProcess>
+              </div>
+            </div>
+         
           </PrivateRoute>
           <Route path="/orderList">
             <OrderList></OrderList>

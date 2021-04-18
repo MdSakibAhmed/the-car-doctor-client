@@ -41,7 +41,7 @@ const OrderProcess = () => {
 
     return (
         <div style={{background:"rgba(0, 0, 0, 0.13)",height:"100vh"}}>
-        <HeaderNavbar></HeaderNavbar>
+       
 
         <div style={{background:""}} className='pt-5  row'>
         <div className="col-md-2">
