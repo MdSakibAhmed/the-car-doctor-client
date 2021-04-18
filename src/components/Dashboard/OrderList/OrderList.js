@@ -28,6 +28,7 @@ const OrderList = () => {
   }, []);
 
   return (
+<>
 
     <div className="row">
       <div className="col-md-2">
@@ -54,7 +55,7 @@ const OrderList = () => {
   </Table>
       </div>
     </div>
-    
+    </>
     
   );
 };

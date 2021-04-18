@@ -1,27 +1,32 @@
 import React from 'react';
 import SingleAchievement from '../SingleAcheivement/SingleAcheivement';
+import RatingImg from '../../../image/rating.png';
+import EsperanceImg from  "../../../image/practice.png";
+import TechnitionImg from '../../../image/technical-support.png'
+import PreapearImg  from '../../../image/car-repair.png';
+
 
 const Achievement = () => {
     const achievements = [
         {
             id:1,
-            img:'',
+            img:RatingImg,
             count:3000,
             achievementName:'Satisfied Customers'
         },
         {
             id:2,
-            img:'',
+            img:EsperanceImg,
             count:15,
             achievementName:'Years of esperance'
         }, {
             id:3,
-            img:'',
+            img:TechnitionImg,
             count:500,
             achievementName:'Technician & Workers'
         }, {
             id:4,
-            img:'',
+            img:PreapearImg,
             count:4000,
             achievementName:'Vehicle Repaired'
         },

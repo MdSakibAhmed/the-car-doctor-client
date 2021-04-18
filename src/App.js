@@ -55,13 +55,37 @@ function App() {
             </div>
           </Route>
           <Route path="/addService">
-            <AddService></AddService>
+          <div>
+              <div className="bg-dark">
+                <HeaderNavbar></HeaderNavbar>
+              </div>
+              <div>
+              <AddService></AddService>
+              </div>
+            </div>
+            
           </Route>
           <Route path="/addAdmin">
-            <AddAdmin></AddAdmin>
+          <div>
+              <div className="bg-dark">
+                <HeaderNavbar></HeaderNavbar>
+              </div>
+              <div>
+              <AddAdmin></AddAdmin>
+              </div>
+            </div>
+           
           </Route>
           <Route path="/manageServices">
-            <ManageServices></ManageServices>
+          <div>
+              <div className="bg-dark">
+                <HeaderNavbar></HeaderNavbar>
+              </div>
+              <div>
+              <ManageServices></ManageServices>
+              </div>
+            </div>
+            
           </Route>
           <PrivateRoute path="/orderNow/:serviceId">
           <div>
@@ -75,10 +99,26 @@ function App() {
          
           </PrivateRoute>
           <Route path="/orderList">
-            <OrderList></OrderList>
+          <div>
+              <div className="bg-dark">
+                <HeaderNavbar></HeaderNavbar>
+              </div>
+              <div >
+              <OrderList></OrderList>
+              </div>
+            </div>
+            
           </Route>
           <Route path="/addReview">
-            <Review></Review>
+          <div>
+              <div className="bg-dark">
+                <HeaderNavbar></HeaderNavbar>
+              </div>
+              <div >
+              <Review></Review>
+              </div>
+            </div>
+          
           </Route>
         </Switch>
       </Router>
