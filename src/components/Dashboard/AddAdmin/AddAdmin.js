@@ -7,7 +7,7 @@ const AddAdmin = () => {
         console.log(data);
 
 
-        fetch('http://localhost:5000/addAdmin',{
+        fetch('https://infinite-shelf-48964.herokuapp.com/addAdmin',{
             method:"POST",
             headers:{"Content-type":'application/json'},
             body:JSON.stringify({email:data.email})

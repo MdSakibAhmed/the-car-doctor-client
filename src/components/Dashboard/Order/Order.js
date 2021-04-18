@@ -16,7 +16,7 @@ const Order = ({order,isAdmin}) => {
     
     useEffect(()=> {
 
-        fetch(`http://localhost:5000/updateStatus/${_id}`,{
+        fetch(`https://infinite-shelf-48964.herokuapp.com/updateStatus/${_id}`,{
             method:"PATCH",
             headers:{"Content-type":"application/json"},
             body:JSON.stringify({status:value})

@@ -7,7 +7,7 @@ const Sidebar = ({serviceId}) => {
     const [isAdmin, setAdmin] = useState(false);
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     useEffect(() => {
-        fetch("http://localhost:5000/isAdmin", {
+        fetch("https://infinite-shelf-48964.herokuapp.com/isAdmin", {
           method: "POST",
           headers: { "Content-type": "application/json" },
           body: JSON.stringify({ email: loggedInUser.email }),

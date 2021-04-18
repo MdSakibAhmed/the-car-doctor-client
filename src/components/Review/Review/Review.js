@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import Sidebar from '../../Dashboard/Sidebar/Sidebar';
 const Review = () => {
 const addReview = review => {
-    fetch('http://localhost:5000/addReview',{
+    fetch('https://infinite-shelf-48964.herokuapp.com/addReview',{
         method:"POST",
         headers:{"Content-type":"application/json"},
         body:JSON.stringify(review)

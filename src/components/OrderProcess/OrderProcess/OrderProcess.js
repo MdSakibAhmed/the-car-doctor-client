@@ -11,7 +11,7 @@ const OrderProcess = () => {
     const history = useHistory()
     const [loggedInUser,setLoggedInUser] = useContext(UserContext)
     useEffect(()=> {
-        fetch(`http://localhost:5000/service/${serviceId}`).then(res => res.json()).then(data => {
+        fetch(`https://infinite-shelf-48964.herokuapp.com/service/${serviceId}`).then(res => res.json()).then(data => {
         
             setService(data)
         })
@@ -28,7 +28,7 @@ const OrderProcess = () => {
             status:"pending",
             payWith: card
         }
-        fetch('http://localhost:5000/addOrder',{
+        fetch('https://infinite-shelf-48964.herokuapp.com/addOrder',{
             method:"POST",
             headers:{"Content-type":"application/json"},
             body:JSON.stringify(orderObj)

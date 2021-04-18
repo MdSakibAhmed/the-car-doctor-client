@@ -9,13 +9,13 @@ const OrderList = () => {
   const [isAdmin, setAdmin] = useState(false);
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
   useEffect(() => {
-    fetch(`http://localhost:5000/orders?email=${loggedInUser.email}`)
+    fetch(`https://infinite-shelf-48964.herokuapp.com/orders?email=${loggedInUser.email}`)
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }, []);
 
   useEffect(() => {
-    fetch("http://localhost:5000/isAdmin", {
+    fetch("https://infinite-shelf-48964.herokuapp.com/isAdmin", {
       method: "POST",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify({ email: loggedInUser.email }),

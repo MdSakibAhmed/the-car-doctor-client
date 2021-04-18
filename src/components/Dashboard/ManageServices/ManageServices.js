@@ -6,7 +6,7 @@ import Sidebar from '../Sidebar/Sidebar';
 const ManageServices = () => {
     const [services,setServices] = useState([])
     useEffect(()=> {
-        fetch('http://localhost:5000/services').then(res => res.json()).then(data => setServices(data))
+        fetch('https://infinite-shelf-48964.herokuapp.com/services').then(res => res.json()).then(data => setServices(data))
     },[services])
     return (
         <div className='row'>

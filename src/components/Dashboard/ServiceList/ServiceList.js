@@ -4,7 +4,7 @@ import { Button } from 'react-bootstrap';
 const ServiceList = ({service}) => {
     const {title,price,description,_id} = service;
     const handleDelete = id => {
-    fetch(`http://localhost:5000/deleteService/${id}`,{
+    fetch(`https://infinite-shelf-48964.herokuapp.com/deleteService/${id}`,{
         method:"DELETE",
         headers: {
             'Content-type': 'application/json; charset=UTF-8'} // Indicates the content 

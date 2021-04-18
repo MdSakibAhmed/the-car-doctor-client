@@ -6,7 +6,7 @@ const AddService = () => {
     const [loggedInUser,setLoggedInUser] = useContext(UserContext)
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const sendDataToDatabase = data => {
-        fetch('http://localhost:5000/addService',{
+        fetch('https://infinite-shelf-48964.herokuapp.com/addService',{
             method:"POST",
             headers:{"Content-type":"application/json"},
             body:JSON.stringify(data)

@@ -5,7 +5,7 @@ const Services = () => {
     const [services,setServices] = useState([])
 
     useEffect(()=> {
-        fetch('http://localhost:5000/services').then(res => res.json()).then(data => {
+        fetch('https://infinite-shelf-48964.herokuapp.com/services').then(res => res.json()).then(data => {
             console.log(data);
 
             setServices(data)
