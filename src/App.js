@@ -55,70 +55,64 @@ function App() {
             </div>
           </Route>
           <Route path="/addService">
-          <div>
+            <div>
               <div className="bg-dark">
                 <HeaderNavbar></HeaderNavbar>
               </div>
               <div>
-              <AddService></AddService>
+                <AddService></AddService>
               </div>
             </div>
-            
           </Route>
           <Route path="/addAdmin">
-          <div>
+            <div>
               <div className="bg-dark">
                 <HeaderNavbar></HeaderNavbar>
               </div>
               <div>
-              <AddAdmin></AddAdmin>
+                <AddAdmin></AddAdmin>
               </div>
             </div>
-           
           </Route>
           <Route path="/manageServices">
-          <div>
+            <div>
               <div className="bg-dark">
                 <HeaderNavbar></HeaderNavbar>
               </div>
               <div>
-              <ManageServices></ManageServices>
+                <ManageServices></ManageServices>
               </div>
             </div>
-            
           </Route>
           <PrivateRoute path="/orderNow/:serviceId">
-          <div>
+            <div>
               <div className="bg-dark">
                 <HeaderNavbar></HeaderNavbar>
               </div>
-              <div >
-              <OrderProcess></OrderProcess>
+              <div>
+                <OrderProcess></OrderProcess>
               </div>
             </div>
-         
           </PrivateRoute>
           <Route path="/orderList">
-          <div>
+            <div>
               <div className="bg-dark">
                 <HeaderNavbar></HeaderNavbar>
               </div>
-              <div >
-              <OrderList></OrderList>
+              <div>
+                <OrderList></OrderList>
               </div>
             </div>
-            
           </Route>
           <Route path="/addReview">
-          <div>
+            <div>
               <div className="bg-dark">
                 <HeaderNavbar></HeaderNavbar>
               </div>
-              <div >
-              <Review></Review>
+              <div>
+                <Review></Review>
               </div>
             </div>
-          
           </Route>
         </Switch>
       </Router>

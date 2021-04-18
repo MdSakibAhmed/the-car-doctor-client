@@ -11,9 +11,9 @@ const Service = ({service}) => {
     return (
         <div   className='col-md-3 ml-3 ml-md-0 mr-5 service-animation d-flex justify-content-between flex-column mb-4 pb-3 border shadow '>
      
-        <img style={{height:"250px"}} className="img-fluid" src={img} alt=""/>
-            <h2 className="pt-2 pl-2 pr-2 pb-2">{title}</h2>
-            <p className='p-2' style={{textAlign:"justify"}}>{description}</p>
+        <img  className="img-fluid service-img" src={img} alt=""/>
+            <h2 className="pt-2 pl-2 pr-2 pb-2 service-title">{title}</h2>
+            <p className='p-2 service-description' style={{textAlign:"justify"}}>{description}</p>
 
             
             

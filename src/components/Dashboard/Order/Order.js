@@ -7,8 +7,6 @@ const Order = ({order,isAdmin}) => {
     const {title,name,service,img,email,status,_id,payWith} = order;
     const [value,setValue] = useState(status)
    
-
-   
     const handleSelect = e => {
         console.log(e);
         setValue(e)

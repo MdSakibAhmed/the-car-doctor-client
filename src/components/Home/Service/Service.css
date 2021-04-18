@@ -4,12 +4,17 @@
     visibility: visible;
 
 }
-.service-animation :hover {
-    background-color: black;
-    color:white;
-    transition: background-color 3s,color 3s;
-}
 
+.service-img:hover  {
+    height: 260px;
+ 
+    
+
+}
+.service-img{
+    height: 250px;
+    transition: height 1s;
+}
 
 .order-button {
    visibility: hidden;
