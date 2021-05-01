@@ -9,6 +9,8 @@ This is a car repair web application. I It is built with react, expressjs, mongo
 3.  If logged in customer is admin, he can add new service, delete any service, edit order status and make a new admin. So newly added service will be shown in service section in home page, and deleted service will be deleted from here.
 4.   Sourch Code Server:https://github.com/MdSakibAhmed/the-car-doctor-server
 
+### Used technology: React, Express js, Environment variable, mongo dB, firebase authentication, react-router, stripe payment method, react hook, react hook form, reactbootstrap., heroku
+
 
 ## Liv Site Link
 https://the-car-doctor-c27fa.web.app/
