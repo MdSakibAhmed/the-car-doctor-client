@@ -3,45 +3,54 @@ import { Button } from "react-bootstrap";
 import "./Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
+import {faFacebookSquare, faTwitterSquare, faLinkedinIn,faYoutubeSquare} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
+  const displaySocialIcon = (icon) => {
+
+    return <div style={{background:"#E33A27", borderRadius:"100%"}} className="  px-2 py-1 mr-2  d-inline-block">
+     <FontAwesomeIcon icon={icon}/>
+    </div>
+    
+  }
   return (
-    <div>
-      <div style={{ background: "#F2F2F2" }} className="row pr-5 pl-4 pt-5">
-        <div className="col-md-3">
+    <div style={{ background: "#071C1F" }} className="">
+      <div  className="row offset-1 pr-5 pl-4 pt-5 text-white footer-container">
+        <div className="col-md-3 ">
           <h2>About Us</h2>
           <p>
-            We offer full range of garage services to vehicle owners in Tucson.
-            Our professionals know how to handle a wide range of car services.
-            Whether you drive a passenger car or medium sized truck or SUV, our
-            mechanics strive to ensure that your vehicle will be performing at
-            its best before leaving our car shop. Whether you drive a medium
-            sized truck or passenger car or SUV, our mechanics strive to ensure.
+          Sed perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor laudantium totam rem aperiam eaque quae abillo inventore veritatis
           </p>
-          <div></div>
+          { displaySocialIcon(faFacebookSquare)}
+          { displaySocialIcon(faTwitterSquare)}
+          { displaySocialIcon(faYoutubeSquare)}
+          { displaySocialIcon(faLinkedinIn)}
+
+
+        
         </div>
         <div className="col-md-3">
           <h2>Our Product</h2>
           <ul className="p-0">
             <li>
               {" "}
-              <FontAwesomeIcon icon={faCheckCircle} /> Tire and Wheel Services
+              <FontAwesomeIcon className="check-mark-icon mr-1" icon={faCheckCircle} /> Tire and Wheel Services
             </li>
             <li>
               {" "}
-              <FontAwesomeIcon icon={faCheckCircle} /> Brake Repair
+              <FontAwesomeIcon className="check-mark-icon mr-1" icon={faCheckCircle} /> Brake Repair
             </li>
             <li>
-              <FontAwesomeIcon icon={faCheckCircle} /> Engine Diagnostics
+              <FontAwesomeIcon className="check-mark-icon mr-1" icon={faCheckCircle} /> Engine Diagnostics
             </li>
             <li>
-              <FontAwesomeIcon icon={faCheckCircle} /> Belts and Hoses
+              <FontAwesomeIcon  className="check-mark-icon mr-1" icon={faCheckCircle} /> Belts and Hoses
             </li>
             <li>
-              <FontAwesomeIcon icon={faCheckCircle} /> Lube, Oil and Filters
+              <FontAwesomeIcon className="check-mark-icon mr-1" icon={faCheckCircle} /> Lube, Oil and Filters
             </li>
             <li>
-              <FontAwesomeIcon icon={faCheckCircle} /> Other Car Services
+              <FontAwesomeIcon className="check-mark-icon mr-1" icon={faCheckCircle} /> Other Car Services
             </li>
           </ul>
         </div>
@@ -59,10 +68,10 @@ const Footer = () => {
             placeholder="Your email"
             id=""
           />
-
-          <Button type="submit" variant="danger">
-            Subscribe Now
-          </Button>
+<button className="hvr-sweep-to-right  ">Subscribe Now</button>
+          {/* <Button type="submit" variant="danger"> */}
+            
+          {/* </Button> */}
         </div>
         <div className="col-md-3">
           <h2>Hours</h2>
@@ -75,7 +84,7 @@ const Footer = () => {
             <li>Saturday:</li>
             <li>Sunday:</li>
           </ul>
-          <ul className="d-inline-block ">
+          {/* <ul className="d-inline-block ">
             <li>8.00am - 6.00pm</li>
             <li>8.00am - 6.00pm</li>
             <li>8.00am - 6.00pm</li>
@@ -83,7 +92,7 @@ const Footer = () => {
             <li>Closed</li>
             <li>8.00am - 6.00pm</li>
             <li>8.00am - 6.00pm</li>
-          </ul>
+          </ul> */}
         </div>
       </div>
     </div>

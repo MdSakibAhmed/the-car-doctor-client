@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const MainHeader = () => {
   
     return (
-        <div className="main-header">
+        <div className="">
         <div>
         <HeaderNavbar></HeaderNavbar>
         </div>

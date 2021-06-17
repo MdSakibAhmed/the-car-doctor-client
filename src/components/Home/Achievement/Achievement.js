@@ -32,14 +32,13 @@ const Achievement = () => {
         },
     ]
     return (
-        <div className="pt-5 pb-5 container">
-        <h1 style={{fontFamily: 'Grenze Gotisch',fontSize:"55px"}} className="text-center "> <span style={{borderBottom:"5px dashed red"}}>Our Achievement</span> </h1>
-        <div className='row  justify-content-between'>
+        <div style={{marginTop:"80px"}} className=" pb-5 ">
+        <h1 style={{fontFamily:"'Rajdhani', sans-serif",textAlign:"center"}}>OUR ACHIEVEMENTS</h1>
+        <span className="d-block" style={{width:"160px", borderBottom:"3px solid red", margin:"10px auto 30px auto"}}></span>
+        <div style={{background:"#E53E29"}} className=' p-3 row  justify-content-center '>
 
         
-       {achievements.map(achievement => <SingleAchievement key={achievement.id} achievement={achievement}></SingleAchievement>)}
-           
-            
+       {achievements.map(achievement => <SingleAchievement key={achievement.id} achievement={achievement}></SingleAchievement>)}             
         </div>
         </div>
     );

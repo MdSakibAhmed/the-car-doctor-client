@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import "./HeaderNavbar.css"
 import {
   Button,
   Form,
@@ -9,61 +10,67 @@ import {
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { UserContext } from "../../../App";
+import logo from '../../../image/logo.png';
 
 const HeaderNavbar = () => {
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
   return (
-    <Navbar bg="transparent" expand="lg" className="container pt-4">
+    <Navbar bg="transparent" expand="lg" className="container " style={{borderBottom:"2px solid #E5EAEE"}}>
       <Navbar.Brand
         style={{ fontSize: "60px",fontFamily: 'Grenze Gotisch'}}
-        className="text-white bolder "
+        className="text-white bolder mr-5 "
         as={Link}
         to="/"
       >
-        The Car Doctor
+       <img src={logo} alt="" />
       </Navbar.Brand>
-      <Navbar.Toggle className="text-white" aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse className="text-white" id="basic-navbar-nav">
-        <Nav className="ml-auto text-white">
+      <Navbar.Toggle className="" aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse className="" id="basic-navbar-nav">
+        <Nav className="ml-5 mt-4" >
           <Nav.Link
-            style={{ fontSize: "19px" }}
+      
             as={Link}
-            className="text-white bolder "
+            className="justify-content-lg-start bolder mr-2  "
             to="/"
           >
-            Home
+          <span className="navigation-item">Home</span>
+            
           </Nav.Link>
           <Nav.Link
-            style={{ fontSize: "19px" }}
+      
             as={Link}
-            className="text-white bolder"
+            className="justify-content-lg-start bolder mr-2  "
+            to="/"
+          >
+               <span className="navigation-item">About</span>
+          </Nav.Link>
+          <Nav.Link
+       
+            as={Link}
+            className=" bolder mr-2 "
             to="/dashboard"
           >
-            Dashboard
+             <span className="navigation-item">Dashboard</span>
           </Nav.Link>
           <Nav.Link
-            style={{ fontSize: "19px" }}
+            
             as={Link}
-            className="text-white bolder"
+            className="bolder mr-2 "
             to="/services"
           >
-            Services
+            <span className="navigation-item">Services</span>
           </Nav.Link>
 
-          <Nav.Link
-            style={{ fontSize: "19px" }}
-            as={Link}
-            className="text-white bolder"
-            to={`${loggedInUser.email ? "/" : "/login"}`}
-          >
-            {" "}
-            <button className="btn-primary pl-2 pr-2 border-0 rounded">
-              {loggedInUser.email ? loggedInUser.name : "Log in"}
-            </button>{" "}
-          </Nav.Link>
+         
         </Nav>
        
       </Navbar.Collapse>
+      <Link  to={`${loggedInUser.email ? "/" : "/login"}`}>
+      <button  className=" hvr-sweep-to-bottom shadow py-3 pb-3 p-3 border-0 login-btn">
+          {loggedInUser.email ? loggedInUser.name : "Log in"}
+            </button>{" "}
+      </Link>
+     
     </Navbar>
   );
 };

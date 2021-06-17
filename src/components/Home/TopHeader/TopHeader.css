@@ -1,0 +1,9 @@
+.top-header-content{
+    color:black;
+    transition: color 0.5s;
+    font-size: 15px;
+}
+.top-header-content:hover {
+    color:red;
+    cursor: pointer;
+}
