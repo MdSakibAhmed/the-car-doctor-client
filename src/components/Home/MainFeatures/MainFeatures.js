@@ -16,7 +16,7 @@ AOS.refresh()
 
   },[])
   return (
-    <div style={{ background: "#F2" }} className="pt-5 pb-5 row mt-5">
+    <div  className="pt-5 pb-5 row mt-5">
       <div className="col-md-5 order-2 order-md-1 offset-1">
         <p data-aos="fade-right" className="text-danger bold fs-1">Best Car Solutions</p>
         <h2 data-aos="fade-down" className="mb-4" style={{fontFamily:"'Rajdhani', sans-serif",fontSize:"40px"}}>We’re Certified & Expert Car Servicing Agency</h2>

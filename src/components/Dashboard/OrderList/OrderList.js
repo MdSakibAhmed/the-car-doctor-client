@@ -3,7 +3,7 @@ import { Table } from "react-bootstrap";
 import { UserContext } from "../../../App";
 import Order from "../Order/Order";
 import Sidebar from "../Sidebar/Sidebar";
-
+import HeaderNavbar from "../../Home/HeaderNavbar/HeaderNavbar"
 const OrderList = () => {
   const [orders, setOrders] = useState([]);
   const [isAdmin, setAdmin] = useState(false);
@@ -29,7 +29,7 @@ const OrderList = () => {
 
   return (
 <>
-
+<HeaderNavbar/>
     <div className="row">
       <div className="col-md-2">
 <Sidebar></Sidebar>

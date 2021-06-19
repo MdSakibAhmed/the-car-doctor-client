@@ -21,8 +21,8 @@ const OurTeam = () => {
 
         <h1 style={{fontFamily:"'Rajdhani', sans-serif",textAlign:"center"}}>OUR MECHANICS</h1>
         <span className="d-block" style={{width:"120px", borderBottom:"3px solid red", margin:"10px auto 30px auto"}}></span>
-        <div data-aos="fade-right"  className="d-flex flex-column flex-md-row justify-content-center mt-3 ">
-        <div className=" team-mechanics-container  d-flex flex-column align-items-center justify-content-between  " id="founder">
+        <div data-aos="fade-right"  className="d-flex mb-3 mb-md-0 flex-column flex-md-row justify-content-center mt-3 ">
+        <div className=" team-mechanics-container ml-4  d-flex flex-column align-items-center justify-content-between  " id="founder">
         <img className="team-mechanics" src={img1} alt="" />
         <p>Founder</p>
         <h4>Abdurrob Faruky</h4>

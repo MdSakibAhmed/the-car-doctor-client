@@ -30,6 +30,7 @@ const Sidebar = ({ serviceId }) => {
       });
   }, []);
   return (
+    
     <div style={{ height: "100vh", background: "black", paddingTop: "15px" }}>
       <h4 className="text-center text-white mb-3">The Car Doctor</h4>
 

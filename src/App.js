@@ -26,94 +26,41 @@ function App() {
             <Home />
           </Route>
           <PrivateRoute path="/dashboard">
-            <div>
-              <div className="bg-dark">
-                <HeaderNavbar></HeaderNavbar>
-              </div>
-              <div className="">
+            
                 <OrderList></OrderList>
-              </div>
-            </div>
+            
           </PrivateRoute>
           <Route path="/login">
-            <div>
-              <div className="bg-dark">
-                <HeaderNavbar></HeaderNavbar>
-              </div>
-              <div className="mt-5">
-                <Login></Login>
-              </div>
-            </div>
+          <Login/>
           </Route>
           <Route path="/services">
-            <div>
-              <div className="bg-dark">
-                <HeaderNavbar></HeaderNavbar>
-              </div>
-              <div>
-                <Services></Services>
-              </div>
-            </div>
+                <Services></Services>      
           </Route>
           <Route path="/addService">
-            <div>
-              <div className="bg-dark">
-                <HeaderNavbar></HeaderNavbar>
-              </div>
-              <div>
-                <AddService></AddService>
-              </div>
-            </div>
+                <AddService></AddService>     
           </Route>
           <Route path="/addAdmin">
-            <div>
-              <div className="bg-dark">
-                <HeaderNavbar></HeaderNavbar>
-              </div>
-              <div>
                 <AddAdmin></AddAdmin>
-              </div>
-            </div>
           </Route>
           <Route path="/manageServices">
-            <div>
-              <div className="bg-dark">
-                <HeaderNavbar></HeaderNavbar>
-              </div>
-              <div>
+        
                 <ManageServices></ManageServices>
-              </div>
-            </div>
+            
           </Route>
           <PrivateRoute path="/orderNow/:serviceId">
-            <div>
-              <div className="bg-dark">
-                <HeaderNavbar></HeaderNavbar>
-              </div>
-              <div>
+          
                 <OrderProcess></OrderProcess>
-              </div>
-            </div>
+          
           </PrivateRoute>
           <Route path="/orderList">
-            <div>
-              <div className="bg-dark">
-                <HeaderNavbar></HeaderNavbar>
-              </div>
-              <div>
+            
                 <OrderList></OrderList>
-              </div>
-            </div>
+             
           </Route>
           <Route path="/addReview">
-            <div>
-              <div className="bg-dark">
-                <HeaderNavbar></HeaderNavbar>
-              </div>
-              <div>
+            
                 <Review></Review>
-              </div>
-            </div>
+             
           </Route>
           <Route path="/logout">
             <Logout></Logout>

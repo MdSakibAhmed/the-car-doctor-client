@@ -18,17 +18,17 @@ AOS.init({
 
   return (
 
-    <div data-aos="fade-left" className=" p-0  ml-md-0 service-container mr-4  d-flex justify-content-start flex-column mb-4  border shadow ">
+    <div data-aos="fade-left" className="    ml-md-0 service-container  mr-0 mr-md-4 d-flex justify-content-start flex-column mb-4  border shadow ">
 
       <img className="img-fluid service-img" src={img} alt="" />
-      <div className="relative text-center p-3 hvr-bounce-to-right d-flex description-container align-items-center justify-content-start flex-column">
+      <div className=" text-center px-3 hvr-bounce-to-right d-flex description-container align-items-center justify-content-start flex-column">
         <h2 style={{fontFamily: "'Rajdhani', sans-serif"}} className=" pt-3 service-title">{title}</h2>
         
-        <p className="p-2 service-description" style={{ textAlign: "justify" }}>
+        <p className="text-justify service-description" >
           {description}
         </p>
         <h3 data-aos="fade-right" id="service-charge">$ {price}</h3>
-        <button data-aos="fade-up" className="hvr-shutter-out-vertical border-0 p-2 rounded" id="book-now-btn">
+        <button onClick={()=> history.push(`/orderNow/${_id}`)} data-aos="fade-up" className="hvr-shutter-out-vertical border-0 p-2 rounded" id="book-now-btn">
           BOOK NOW
         </button>
       </div>

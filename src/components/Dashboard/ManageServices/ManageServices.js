@@ -2,13 +2,15 @@ import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
 import ServiceList from '../ServiceList/ServiceList';
 import Sidebar from '../Sidebar/Sidebar';
-
+import HeaderNavbar from '../../Home/HeaderNavbar/HeaderNavbar';
 const ManageServices = () => {
     const [services,setServices] = useState([])
     useEffect(()=> {
         fetch('https://infinite-shelf-48964.herokuapp.com/services').then(res => res.json()).then(data => setServices(data))
     },[services])
     return (
+        <>
+        <HeaderNavbar/>
         <div className='row'>
         <div className="col-md-2">
             <Sidebar></Sidebar>
@@ -34,6 +36,7 @@ const ManageServices = () => {
         .
           
         </div>
+        </>
     );
 };
 

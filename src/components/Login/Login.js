@@ -6,6 +6,7 @@ import { UserContext } from '../../App';
 import { useHistory, useLocation } from 'react-router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGoogle } from "@fortawesome/free-brands-svg-icons"
+import HeaderNavbar from "../Home/HeaderNavbar/HeaderNavbar";
 !firebase.apps.length && firebase.initializeApp(firebaseConfig)
 
 
@@ -34,9 +35,12 @@ const Login = () => {
     }
     
     return (
+      <>
+<HeaderNavbar/>
         <div className='text-center'>
             <button className='btn-primary border-0 rounded-pill p-2 text-center' style={{fontSize:"22px"}} onClick={handleLogin}> <FontAwesomeIcon icon={faGoogle}/>  Continue with Google</button>
         </div>
+        </>
     );
 };
 

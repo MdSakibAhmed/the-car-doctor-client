@@ -41,6 +41,8 @@ const OrderProcess = () => {
   };
 
   return (
+    <>
+    <HeaderNavbar/>
     <div style={{ background: "rgba(0, 0, 0, 0.13)", height: "100vh" }}>
 
 {successOrder && <div style={{opacity:"0.75"}} className=" bg-success o-0 text-center text-white pt-2 pb-2">
@@ -90,6 +92,7 @@ const OrderProcess = () => {
         )}
       </div>
     </div>
+    </>
   );
 };
 

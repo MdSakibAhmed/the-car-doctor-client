@@ -1,7 +1,36 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import Sidebar from "../../Dashboard/Sidebar/Sidebar";
+import HeaderNavbar from "../../Home/HeaderNavbar/HeaderNavbar";
+import Modal from "react-modal";
+Modal.setAppElement("body")
+const customStyles = {
+  content: {
+    padding:"50px",
+    top: '30%',
+    left: '40%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+  },
+};
 const Review = () => {
+  let subtitle;
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function afterOpenModal() {
+    // references are now sync'd and can be accessed.
+    subtitle.style.color = '#f00';
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
   const addReview = (review) => {
     fetch("https://infinite-shelf-48964.herokuapp.com/addReview", {
       method: "POST",
@@ -36,6 +65,8 @@ const Review = () => {
   } = useForm();
 
   return (
+    <>
+    <HeaderNavbar/>
     <div className="row">
       <div className="col-md-2">
         <Sidebar></Sidebar>
@@ -89,8 +120,25 @@ const Review = () => {
             type="submit"
           />
         </form>
+        <button onClick={openModal}>Open Modal</button>
+        <Modal
+        isOpen={modalIsOpen}
+        onAfterOpen={afterOpenModal}
+        onRequestClose={closeModal}
+        style={customStyles}
+        contentLabel="Example Modal"
+      >
+        <h2 className="text-center text-success" ref={(_subtitle) => (subtitle = _subtitle)}>Thanks for your review</h2>
+        <div className="d-flex justify-content-end mt-5">
+          <button className="btn-success" onClick={closeModal}>OK</button>
+       
+        </div>
+        
+       
+      </Modal>
       </div>
     </div>
+    </>
   );
 };
 

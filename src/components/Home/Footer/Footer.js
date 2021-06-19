@@ -14,8 +14,8 @@ const Footer = () => {
     
   }
   return (
-    <div style={{ background: "#071C1F" }} className="">
-      <div  className="row offset-1 pr-5 pl-4 pt-5 text-white footer-container">
+    <section style={{ background: "#071C1F" }} className="">
+      <div  className="row offset-1 pr-5 pl-4 pt-5 text-white footer-container pb-3">
         <div className="col-md-3 ">
           <h2>About Us</h2>
           <p>
@@ -29,7 +29,7 @@ const Footer = () => {
 
         
         </div>
-        <div className="col-md-3">
+        <div className="col-md-3 mt-3 mt-md-0">
           <h2>Our Product</h2>
           <ul className="p-0">
             <li>
@@ -69,11 +69,9 @@ const Footer = () => {
             id=""
           />
 <button className="hvr-sweep-to-right  ">Subscribe Now</button>
-          {/* <Button type="submit" variant="danger"> */}
-            
-          {/* </Button> */}
+         
         </div>
-        <div className="col-md-3">
+        <div className="col-md-3 mt-3 mt-md-0">
           <h2>Hours</h2>
           <ul className="d-inline-block p-0">
             <li>Monday:</li>
@@ -95,7 +93,21 @@ const Footer = () => {
           </ul> */}
         </div>
       </div>
-    </div>
+      <div style={{background:"black",height:"100px"}} >
+      <div className="container">
+      <div style={{color:"#8f8786"}} className="d-flex flex-column flex-md-row  pt-4 justify-content-between align-items-center">
+      <p>Copyright & Designed <br/> By Sakib Ahmed-2021 </p>
+      <div style={{verticalAlign:"middle"}} className=" d-none d-md-block">
+        <span className="mr-2">Terms and condition</span>
+        <span className="mr-2">claim</span>
+        <span className="mr-2">Privacy and policy</span>
+      </div>
+      </div>
+  
+      </div>
+     
+      </div>
+    </section>
   );
 };
 

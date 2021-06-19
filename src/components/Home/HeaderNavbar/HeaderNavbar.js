@@ -15,10 +15,10 @@ import logo from '../../../image/logo.png';
 const HeaderNavbar = () => {
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
   return (
-    <Navbar bg="transparent" expand="lg" className="container " style={{borderBottom:"2px solid #E5EAEE"}}>
+    <Navbar bg="transparent" expand="lg" className="container" style={{borderBottom:"2px solid #E5EAEE"}}>
       <Navbar.Brand
         style={{ fontSize: "60px",fontFamily: 'Grenze Gotisch'}}
-        className="text-white bolder mr-5 "
+        className="text-white bolder  mr-5 "
         as={Link}
         to="/"
       >

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
 import Sidebar from '../Sidebar/Sidebar';
+import HeaderNavbar from '../../Home/HeaderNavbar/HeaderNavbar';
 const AddAdmin = () => {
     const { register, handleSubmit,  formState: { errors } } = useForm()
     const handleAddAdmin = data => {
@@ -19,6 +20,8 @@ const AddAdmin = () => {
     }
     
     return (
+        <>
+        <HeaderNavbar/>
         <div className='row '>
             <div className='col-md-2'>
             <Sidebar></Sidebar>
@@ -35,7 +38,7 @@ const AddAdmin = () => {
     </form>
             </div>
         </div>
-        
+        </>
     );
 };
 

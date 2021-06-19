@@ -2,6 +2,7 @@ import React, { useContext, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { UserContext } from "../../../App";
 import Sidebar from "../Sidebar/Sidebar";
+import HeaderNavbar from "../../Home/HeaderNavbar/HeaderNavbar"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPlusSquare
@@ -61,6 +62,8 @@ const AddService = () => {
   }
 
   return (
+    <>
+    <HeaderNavbar/>
     <div className="row">
       <div className="col-md-2">
         <Sidebar></Sidebar>
@@ -126,6 +129,7 @@ const AddService = () => {
       </div> }
      
     </div>
+    </>
   );
 };
 
